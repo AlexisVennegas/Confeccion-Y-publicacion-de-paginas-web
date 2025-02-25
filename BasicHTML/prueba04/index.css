@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* ------- GENERALES --------- */
+li {
+    list-style: none;
+}
+body {
+    background-image: url('../prueba02/assets/fondo.gif');
+    background-repeat: repeat-x;
+    background-color: #f2f5fe;    
+}
+#wrapper {
+    width: 770px;
+    height: 900px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    margin: 50px auto;
+}
+.header {
+	width: 770px;
+	height: 200px;
+    background-image: url("../prueba02/assets/cabecera.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.main {
+	width: 760px;
+	height: 600px;
+	
+	margin-left: 5px;
+}
+h2 {
+    background-color: #BBC3C6;
+    color: white;
+}
+.orderlist {
+    list-style: none;
+    display: flex;
+    color: black;
+}
+.orderlist > li {
+    margin: 10px;
+    color: black !important;
+   
+}
+li > a {
+    color: black;
+    text-decoration: none;
+
+}
+.footer {
+	width: 760px;
+	height: 100px;
+	background-color: white;
+	margin-left: 5px;
+    display: flex;
+    align-items: end;
+}
+.copyright{
+    margin-bottom: 10px
+}
+
+.logo {
+	width: 770px;
+	height: 150px;
+
+}
+.menu {
+	width: 770px;
+	height: 50px;
+	background-color: rgba(51, 51, 214, 0.815);
+}
+.menulist {
+    width: 550px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menulist > li {
+    list-style: none;
+    display: inline;
+    text-decoration: none;
+}
+li > a {
+    color: black;
+    text-decoration: none;
+}
+.articulos {
+    margin-top: 10px;
+	width: 530px;
+	height: 590px;
+    background-color: #cbd6db; 
+    float: left;
+}
+.aside {
+	width: 230px;
+	height: 100%;
+	background-color:#ACB8C4;	
+	float: right;
+}
+.letras {
+	width: 385px;
+	height: 150px;
+	float: left;
+}
+h1 {
+    margin: 40px 0px 0px 10px;    
+    color: white;
+}
+h1 > a {
+    color: white;
+}
+.buscar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buscar {
+	width: 385px;
+	height: 150px;
+
+	float: left;
+}
+.art {
+	width: 530px;
+	height: 200px;
+	
+    /* border: 1px solid black; */
+}
+.sobre {
+	width: 230px;	
+	height: 100px;
+}
+.sobre > div {
+    width: 39%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    float: left;;
+}
+.sobre > article {
+    margin-top: 10px;
+    float: right;
+}
+h3 {
+    background-color: #8CA5C5;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 16px;
+    color: #687c96;
+}
+.categorias {
+	width: 230px;	
+	height: 150px;
+}
+
+.categoria > li {
+    padding: 7px;
+    border-bottom: 1px solid black;
+}
+.archivos {
+	width: 230px;	
+	height: 150px;
+}
+.archivo > li {
+    padding: 7px;
+    border-bottom: 1px solid black;
+}
+.enlaces {
+	width: 230px;	
+	height: 150px;
+			
+}
+.enlace > li {
+    padding: 7px;
+    border-bottom: 1px solid black;
+}

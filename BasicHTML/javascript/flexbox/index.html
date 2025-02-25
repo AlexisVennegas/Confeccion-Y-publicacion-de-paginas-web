@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        /* flex-direction: column;  este los ordena por columna */          
+        /* flex-wrap: wrap; este los acomoda en la misma fila */
+        /* flex-flow: column wrap; (shorthand para poner varios elementos) */
+        /* justify-content: space-between; alinea los elementos de forma vertical */
+        /* align-items: ;  alinea los elementos de forma horizontal */
+        /* align-content: ;  alinea los elementos de forma vertical */
+        /* align-items: stretch; estira los elementos */
+        align-content: center;
+        /* flex: none || 1 || 0 || shorthand */
+            
+
+        
+        border: 1px solid red;
+        width: 800px;
+        min-height: 300px;
+        margin: 100px auto;
+    }
+    .container > div {
+        border: 1px solid black;
+        width: 100px;
+        height: inherit;
+        display: flex;
+}
+</style>
+<body>
+    
+    <div class="container">
+        <div >1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+
+<head>
+    <link rel="stylesheet" href="../prueba20/fonts/fontello-6c9bfa25/css/fontello-embedded.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ul-header">
+                
+                <li> <i class="demo-icon icon-home"></i>
+                    Home
+                        <ul class="modal">
+                            <li>Home</li>
+                            <li>Home</li>
+                            <li>Home</li>
+                            <li>Home</li>
+                            <li>Home</li>
+                        </ul>
+                  
+                </li>
+                <li>
+                   About
+                   
+                        <ul class="modal">
+                            <li>Home</li>
+                            <li>Home</li>
+                            <li>Home</li>
+                            <li>Home</li>
+                            <li>Home</li>
+                        </ul>
+                  
+                </li>
+                <li>
+                    Services
+                  
+                        <ul class="modal">
+                            <li>Home</li>
+                            <li>Home</li>
+                            <li>Home</li>
+                            <li>Home</li>
+                            <li>Home</li>
+                        </ul>
+                   
+                </li>
+                <li>
+                    Contact
+                
+                        <ul class="modal">
+                            <li>Home</li>
+                            <li>Home</li>
+                            <li>Home</li>
+                            <li>Home</li>
+                            <li>Home</li>
+                        </ul>
+                 
+                </li>
+                <li>
+                   Products
+                
+                        <ul class="modal">
+                            <li>Home</li>
+                            <li>Home</li>
+                            <li>Home</li>
+                            <li>Home</li>
+                            <li>Home</li>
+                        </ul>
+                 
+                </li>
+                
+            </ul>
+        </header>
+    </div>
+</body>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        background-color: #333;
+        box-sizing: border-box;
+    }
+    header {
+        margin: 20px ;
+        color: #fff;
+        background: white;
+        height: 5%;  
+        border-radius: 20px;
+       
+    }
+    ul {
+        background-color: white;
+        list-style: none;
+        height: 100%;
+        width: 100%;
+        display: flex;
+    }
+    .ul-header > li {
+        height: 100%;
+        width: 12%;
+        color: #333;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .modal {
+        display: none; 
+        transition: .2s;
+        width: 100px;
+        height: auto;
+        position: absolute;
+        top: 0px;
+        width: 100px;
+    }
+    .ul-header > li:hover  .modal {
+        background-color: white;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 67px;
+        width: 100px;
+        height: auto;
+        transition: .2s;
+    }
+   
+    li > i {
+        width: 20px;
+        background-color: white;
+        margin-right: 5px;
+    }
+  
+    .modal > li {
+        color: #333;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: .2s;
+        width: 100%;
+        height: 30px;
+    }
+  
+   
+</style>

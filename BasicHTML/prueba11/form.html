@@ -1,0 +1,98 @@
+<body>
+    <section>
+        <form action="">
+
+            <label for="nombre">Ingrese Nombre:</label>
+
+            <input type="text" name="nombre" id="nombre">
+            
+            <label for="apellido">Ingresar Mail:</label>
+
+            <input type="text" name="apellido" id="apellido">
+
+            <label for="">Comentario:</label>
+
+            <textarea name="" id="" cols="4" rows="5"></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+        <p>
+            <em>SQL</em>
+            <em>
+                Structured Query Language
+            </em>
+            (lenguaje de consulta estructurado) es un lenguaje de programación especializado en la administración y recuperación de información almacenada en bases de datos relacionales como <strong>MYSQL</strong>, <strong>ORACLE</strong>, etc
+        </p>
+    </section>
+
+</body>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+section {
+    width: 500px;
+    margin: 0 auto;
+}
+form {
+    width: 80%;
+    height: 40%;
+    border: 1px solid black;
+    margin: 10px auto;
+    background-color: rgba(253, 241, 12, 0.084);
+   
+    max-width: 500px;
+}
+/* labels */
+label {
+    width: 30%;
+    float: left;
+}
+
+/* primer input */
+form input:nth-child(2) {
+    background-color: rgba(253, 241, 12, 0.816);
+    display: inline;
+}
+/* segundo input */
+form input:nth-child(4) {
+    background-color: rgba(253, 241, 12, 0.816);
+    width: 60%;
+    display: inline;
+}
+/* textarea */
+form textarea {
+    width: 50%;
+    background-color: white;
+    display: block;
+    resize: vertical;
+    max-height: 140px;
+    position: relative;
+}
+
+form input[type="submit"] {
+    margin: 0 auto;
+    width: 20%;
+}
+/* strong:first-child {
+    color: red;
+} */
+/* strong:last-child {
+    color: blue;
+} */
+
+/* strong:nth-child(3) {
+    background-color: rgba(255, 0, 0, 0.355);
+} */
+strong:nth-last-of-type(2) {
+    background-color: rgba(255, 0, 0, 0.355);
+}
+
+/* strong:first-of-type {
+    background-color: rgba(255, 0, 0, 0.355);
+} */
+
+</style>

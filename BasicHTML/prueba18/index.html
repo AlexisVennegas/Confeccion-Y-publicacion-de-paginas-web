@@ -1,0 +1,66 @@
+
+<body>
+    <div class="wrapper">
+        <div class="container01" id="container">
+            <ul>
+                <li class="li"></li>
+                <li class="li"></li>
+                <li class="li"></li>
+                <li class="li"></li>
+                <li class="li"></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+         window.addEventListener('scroll', function() {
+            const container = document.getElementById('container');
+            const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 500;
+            console.log(scrollPercentage)
+            container.style.transform = 'rotateX(' + scrollPercentage + 'deg)';
+            // cuando llegue a 90 grados, que se detenga
+            if(scrollPercentage >= 90) {
+                container.style.transform = 'rotateX(90deg)';
+                // cambiar los colores de li ahora a un gradiant morado
+                const lis = document.querySelectorAll('.li');
+                lis.forEach(li => {
+
+                  
+                    li.style.width = '100%';
+                    li.style.height = '20%';
+                    li.style = "background: linear-gradient(90deg, rgb(0, 68, 146) -41.6667%, rgb(25, 19, 204) 58.3333%, rgb(163, 167, 231) 158.333%, rgb(115, 0, 168) 258.333%, rgb(24, 6, 68) 358.333%, rgb(62, 44, 152) 458.333%, rgb(226, 219, 201) 558.333%, rgb(236, 133, 53) 658.333%);"
+
+                });
+                // vamos aumento el transform rotate x a como estaba poco a poco con el scroll
+                window.addEventListener('scroll', function() {
+                    const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 500;
+                    container.style.transform = 'rotateX(' + (0 - scrollPercentage) + 'deg)';
+                });
+              
+            }
+        });
+    </script>
+</body>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    .wrapper {
+    width: 100%;
+    min-height: 1200vh;
+    background-color: black;
+    }
+    .container01 {
+    width: 100%;
+    height: 100vh;
+    border: 1px solid white;
+    position: fixed;
+    }
+    li {
+        background: linear-gradient(90deg, #004492 -41.666666666666686%, #485f46 58.333333333333314%, #a3a7e7 158.33333333333331%, #030619 258.3333333333333%, #180644 358.3333333333333%, #3e2c98 458.3333333333333%, #e2dbc9 558.3333333333333%, #ec8535 658.3333333333333%);
+        width: 100%;
+        height: 20%;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+</style>

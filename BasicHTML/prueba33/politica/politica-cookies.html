@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Mi web</title>
+    
+    <link href="css/bootstrap.css" rel="stylesheet">
+   
+    <link href="estilo.css" rel="stylesheet">
+   <script>
+    function controlcookies() {
+        localStorage.controlcookie = (localStorage.controlcookie || 0);
+        //si la variable no existe se crea al hacer click en Aceptar
+        localStorage.controlcookie++;
+        //incrementamos la cuenta de la cookie
+        cookie1.style.display='none';//esconde la política de cookies
+    }
+   </script>
+ 
+  </head>
+  <body>
+  <header>
+   
+    <nav class="navbar navbar-expand-lg navbar-dark p-3 bg-danger" id="headerNav">
+      <div class="container-fluid">
+        <a class="navbar-brand d-block d-lg-none" href="#">
+          <img src="/static_files/images/logos/logo_2_white.png" height="80" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mx-auto ">
+            <li class="nav-item">
+              <a class="nav-link mx-2 active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="#">Products</a>
+            </li>
+            <li class="nav-item d-none d-lg-block">
+              <a class="nav-link mx-2" href="#">
+                <img src="/static_files/images/logos/logo_2_white.png" height="80" />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="#">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Company
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Blog</a></li>
+                <li><a class="dropdown-item" href="#">About Us</a></li>
+                <li><a class="dropdown-item" href="#">Contact us</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+<main>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <div class="card  mb-4">
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+          <div class="card-body">
+            <h5 class="card-title">Card title that wraps to a new line</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+        <div class="card p-3  mb-4">
+          <figure class="p-3 mb-0">
+            <blockquote class="blockquote">
+              <p>A well-known quote, contained in a blockquote element.</p>
+            </blockquote>
+            <figcaption class="blockquote-footer mb-0 text-body-secondary">
+              Someone famous in <cite title="Source Title">Source Title</cite>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    
+      <div class="col-4">
+        <div class="card  mb-4">
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card text-bg-primary text-center p-3 mb-4">
+          <figure class="mb-0">
+            <blockquote class="blockquote">
+              <p>A well-known quote, contained in a blockquote element.</p>
+            </blockquote>
+            <figcaption class="blockquote-footer mb-0 text-white">
+              Someone famous in <cite title="Source Title">Source Title</cite>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="card text-center mb-4">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has a regular title and short paragraph of text below it.</p>
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card mb-4">
+          <svg class="bd-placeholder-img card-img" width="100%" height="260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Card image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Card image</text></svg>
+        </div>
+        <div class="card p-3 text-end mb-4">
+          <figure class="mb-0">
+            <blockquote class="blockquote">
+              <p>A well-known quote, contained in a blockquote element.</p>
+            </blockquote>
+            <figcaption class="blockquote-footer mb-0 text-body-secondary">
+              Someone famous in <cite title="Source Title">Source Title</cite>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="card mb-4">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ <div class="cookiesms" id="cookie1">
+    Este sitio web usa cookies, puedes ver <a href="https//www.eldominio.com/politica-cookies.html">la política de cookies aquí</a> - 
+    <button onclick="controlcookies()">Aceptar</button>
+    <div class="cookies2">
+        Política de cookies +
+    </div>
+ </div>
+ <script>
+    if (!localStorage.controlcookie>0) {
+        cookie1.setAttribute("style","animation: desaparecer 5s;");
+    }
+ </script>
+     
+  
+<script src="js/bootstrap.bundle.min.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,194 @@
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+  <title>Coche</title>
+  <style>
+    body,
+html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  background: url("./todo/images_animation/fondo.jpg");
+  animation: clouds 3s linear infinite;
+  animation: clouds 3s linear infinite;
+  
+}
+
+/*Animacion de las nubes*/
+@-webkit-keyframes clouds {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes clouds {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 200% 0;
+  }
+}
+
+#mundo {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#coche {
+  margin: 10% auto -25px;
+  position: absolute;
+  z-index: 3;
+  left: 500px;
+  bottom: 60px;
+  width: 300px;
+  animation: car 15s infinite;
+  animation: car 15s infinite;
+}
+
+/*Animacion para el coche en funcionamiento*/
+@-webkit-keyframes car {
+  50% {
+    transform: translateX(10%);
+  }
+  70% {
+    transform: translateX(-20%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes car {
+  50% {
+    transform: translateX(10%);
+  }
+  70% {
+    transform: translateX(-20%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+#coche img {
+  width: 100%;
+  animation: suspension 1s infinite;
+  animation: suspension 1s infinite;
+}
+
+/*Animacion para crear la suspension del coche*/
+@-webkit-keyframes suspension {
+  0% {
+    transform: translateY(1px);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(1px);
+  }
+}
+
+@keyframes suspension {
+  0% {
+    transform: translateY(1px);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(1px);
+  }
+}
+
+
+
+
+/*Animacion para el grio de las ruedas*/
+@-webkit-keyframes giro {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes giro {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+#arbol {
+  width: 250px;
+  height: 300px;
+  position: absolute;
+  z-index: 1;
+  bottom: 15px;
+  left: 10px;
+  animation: tree 20s linear infinite;
+  animation: tree 20s linear infinite;
+}
+
+
+
+#suelo {
+  border-top: 25px solid #333;
+  height: 30px;
+  background-color: green;
+  background-size: 200px auto;
+  position: relative;
+  z-index: 2;
+  animation: road 2s linear infinite;
+  animation: road 2s linear infinite;
+}
+
+/*Animacion para la carretera*/
+@-webkit-keyframes road {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes road {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 200% 0;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+  <div id="mundo">
+    <div id="coche">
+      <img src="./todo/images_animation/coche.png" alt="">
+      
+      <div id="smoke"></div>
+    </div>
+  
+    <div id="suelo"></div>
+  </div>
+</body>
+
+</html>

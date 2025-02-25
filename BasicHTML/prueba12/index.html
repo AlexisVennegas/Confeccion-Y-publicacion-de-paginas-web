@@ -1,0 +1,123 @@
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>para convertir la fuente a todos los formatos que necesito</h1>
+    <ol>
+        <li>
+            Entrar en la pagina font-squarrel
+        </li>
+        <li>
+           Click en webfont generator
+        </li>
+        <li>
+            Click en upload your font
+        </li>
+        <li>
+            Seleccionar la fuente o las fuentes que queremos convertir y click en open (abrir)
+        </li>
+        <li>
+            click en expert 
+        </li>
+        <li>
+            marcar en font formats todos los cuadrados menos eotlite 
+        </li>
+        <li>
+            Click en Yes
+        </li>
+        <li>
+            Click en download your kit
+        </li>
+        <li>
+            Ir a la carpeta descargas
+        </li>
+        <li>
+            Doble click en el archivo 
+        </li>
+        <li>
+            Seleccionar todo y llevarlo a una carpeta
+        </li>
+        <li>
+            Eliminar la carpeta especific y generator_config.txt 
+        </li>
+        <li>
+            Seleccionar todos los archivos menos stylesheet
+        </li>
+        <li>
+            Copiarlos 
+        </li>
+        <li>
+            irnos a la carpeta de nuestra web
+        </li>
+        <li>
+            crearnos una carpeta que se llame fonts, y pegarlo
+        </li>
+        <li>
+            volver a la carpeta donde lo hemos descomprimido y abrir el stylesheet en el visual studio code
+        </li>
+        <li>
+            copiarnos lo que esta escrrito en el archivo
+        </li>
+        <li>
+            irnos a nuestra hoja de estilo de nuestra web, 
+        </li>
+        <li>
+            pegar lo que hemos copiado en nuestro archivo de estilos
+        </li>
+        <li>
+            cambiar la ruta de la fuente por la que hemos creado
+        </li>
+        <li>
+            donde pone url en la ruta hay que poner fonts
+        </li>
+        <li>
+            cuando quiero utilizar esa letra en el selector que sea 
+            me copio la font family
+        </li>
+
+        
+    </ol>    
+
+</body>
+
+<style>
+
+/* PRIMERA */
+    @font-face {
+    font-family: 'trushdexregular';
+    src: url('trushdex-webfont.eot');
+    src: url('trushdex-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/trushdex-webfont.woff2') format('woff2'),
+         url('fonts/trushdex-webfont.woff') format('woff'),
+         url('fonts/trushdex-webfont.ttf') format('truetype'),
+         url('fonts/trushdex-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+    /* SEGUNDA */
+    @font-face {
+        font-family: 'Minecraft'; 
+        src: url('fonts/Minecraft.ttf') format('truetype'); 
+        font-weight: normal;
+        font-style: normal;
+        
+}
+
+
+    h1 {
+        text-align: center;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-family: 'Minecraft', sans-serif;
+        margin-bottom: 15%;
+    }
+    /* body {
+        font-family: 'Minecraft', sans-serif;
+    } */
+    body {
+        font-family: 'trushdexregular', sans-serif;
+    }
+</style>

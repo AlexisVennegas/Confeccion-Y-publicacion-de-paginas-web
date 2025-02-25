@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            <title></title>
+           
+            <style>
+            #ballWrapper {
+                width:150px;
+                height:300px;
+                position:fixed;
+                left:50%;
+                top:35%;
+                z-index:100;
+                transform:scale(1);
+                margin-left: -70px;
+            }   
+            #ball {
+                width:140px;
+                height:140px;
+                border-radius:50%;
+                background:linear-gradient(rgba(185,185,185,1) 0%, rgba(120,120,120,1) 99%);
+                box-shadow: 0 -5px 15px rgba(255,255,255,.4) inset,-2px -1px 40px rgba(0,0,0,.4) inset, 0 0 1px #000;
+                position:absolute;
+                top:0;
+                z-index:10;
+                animation:saltar 1s infinite;
+            }
+            /* #ball::after {
+                content:"";
+                width:80px;
+                height:40px;
+                position:absolute;
+                left:30px;
+                top:10px;
+                z-index:9;
+                background-image:linear-gradient(rgba(232,232,232,1) 0%,rgba(232,232,232) 1%, rgba(255,255,255,0) 100%);
+            } */
+            @keyframes saltar {
+                0% {
+                    top:0;
+                    animation-timing-function:ease-in;
+                }
+                50% {
+                    top:140px;
+                    height:140px;
+                    animation-timing-function: ease-out;
+                }
+                55% {
+                    top:160px;
+                    height:120px;
+                    border-radius:70px / 60px;
+                    animation-timing-function:ease-in;
+                }
+                65% {
+                    top:120px;
+                    height:140px;
+                    border-radius:70px;
+                    animation-timing-function:ease-out;
+                }
+                95% {
+                    top:0;
+                    animation-timing-function:ease-in;
+                }
+                100% {
+                    top:0;
+                    animation-timing-function:ease-in;
+                }
+            }
+            #ballShadow {
+                position:absolute;
+                left:50%;
+                bottom:0;
+                z-index:9;
+                margin-left:-30px;
+                width:60px;
+                height:75px;
+                background:rgba(20,20,20,.1);
+                box-shadow:0 0 20px 35px rgba(20,20,20,.1);
+                border-radius:30px / 40px;
+                transform:scaleY(.3);
+                animation:encoger 1s infinite;
+            }
+            @keyframes encoger {
+                0% {
+                    bottom:0;
+                    margin-left:-30px;
+                    width:60px;
+                    height:75px;
+                    background:rgba(20,20,20,.1);
+                    box-shadow:0px 0 20px 35px rgba(20,20,20,.1);
+                    border-radius: 30px / 40px;
+                    animation-timing-function: ease-in;
+                }
+                50% {
+                    bottom:30px;
+                    margin-left:-10px;
+                    width:20px;
+                    height:5px;
+                    background:rgba(20,20,20,.3);
+                    box-shadow:0px 0 20px 35px rgba(20,20,20,.3);
+                    border-radius: 20px / 20px;
+                    animation-timing-function: ease-out;
+                }
+                100% {
+                    bottom:0px;
+                    margin-left:-30px;
+                    width:60px;
+                    height:75px;
+                    background:rgba(20,20,20,.1);
+                    box-shadow:0px 0 20px 35px rgba(20,20,20,.1);
+                    border-radius: 30px / 40px;
+                    animation-timing-function: ease-in;
+                }
+
+            }
+            </style>
+        </head>
+        
+        <body>
+        <!--- ANIMATION 
+        animation-name: especifica el nombre de la regla @keyframes que describe los fotogramas de la animación
+        
+        animation-delay: tiempo de retardo entre el momento en el que el elemento se carga y el comienzo de la secuencia de la animación
+
+        animation-direction: indica si la animación debe retroceder hasta el fotograma de inicio al finalizar la secuencia o si debe comenzar desde el principio al llegar al final
+        normal | reverse | alternate | alternate-reverse
+
+        animation-duration: indica la cantidad de tiempo que la animación consume en completar su ciclo 
+
+        animation-iteration-count: el número de veces que se repite. Podemos indicar infinite para repetir la animación indefinidamente.
+
+        animation-play-state: permite pausar y reanudar la secuencia de animación
+        running (la animación está en ejecución) | paused (la animación está en pausa)
+
+        animation-timing-function: indica el ritmo de la animación, es decir, como se muestran los fotogramas estableciendo curvas de aceleración
+        ease: comienzo rápido, luego velocidad constante y final lento
+        ease-in: al revés que ease
+        ease-out: similar a ease con final a velocidad constante
+        ease-in-out: comienzo lento y progresión a velocidad constante 
+        linear: progresión y velocidad constante
+        step-start: salto de la situación inicial a la final al comienzo 
+        step-end: salto de la situación final al final
+        steps(numerode pasos,end): el primer parámetro establece el número de pasos intermedios entre la situación inicial y la final, lo que equivale a que la animación se vea en saltos)
+        cubic-bezier(valor1,valor2,valor3...): permite especificar la curva temporal de forma matemática para definir formas de cambio personalizadas.
+
+        animation-fill-mode: especifica qué valores tendrás las propiedades después de finalizar la animación - los de antes de ejecutarla, los del último fotograma o ambos
+        none: el elemento comenzará y quedará en el estado previo a la animación
+        forwards: quedará en el estado final de la animación
+        backwards: se quedará en el estado indicado al comienzo y esperará en ese estado hasta que se cumpla el tiempo indicado en animation-delay. Una vez que se cumpla el tiempo continuará la ejecución desde ese estado inicial
+        both: combinación de los dos anteriores
+        
+        
+        
+        
+        -->	
+       <div id="ballWrapper">
+        <div id="ball"></div>
+        <div id="ballShadow"></div>
+       </div>
+        </body>
+    </html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>examen</title>
+    <link rel="stylesheet" href="./Style/Examen.css">
+</head>
+<body>
+    <div class="wrapper">
+        <form action="hola.php">
+            <!-- creamos los inpus y labels para recibir informacion -->
+            <label for="nombre">Nombres:</label>
+            <input type="text" name="nombre" id="nombre" required>
+
+            <label for="apellido">Apellidos:</label>
+            <input type="text" name="apellido" id="apellido" required>
+
+            <!-- genero -->
+            <label for="genero">Genero:</label>
+            <select name="genero" id="genero" required>
+                <option value="Hombre">Hombre</option>
+                <option value="Mujer">Mujer</option>
+                <option value="Otro">Otro</option>
+            </select>
+
+            <label for="edad">Dni: </label>
+            <input type="number" name="edad" id="edad" required min="0" max="100">
+
+            <label for="correo">Correo:</label>
+            <input value="pendejos todos" type="email" name="correo" id="correo" required>
+
+            <label for="telefono">Telefono:</label>
+            <input type="tel" name="telefono" id="telefono" required>
+
+            <label for="direccion">Direccion:</label>
+            <input type="text" name="direccion" id="direccion" required>
+
+            <label for="ciudad">Equipo: </label>
+            <input type="text" name="ciudad" id="ciudad" required>
+        
+            <label for="date">Fecha de Nacimiento: </label>
+            <input type="date"name="date" id="date">
+            <!-- button de enviar -->
+            <button>Enviar</button>
+            
+        </form>
+    </div>
+</body>
+</html>

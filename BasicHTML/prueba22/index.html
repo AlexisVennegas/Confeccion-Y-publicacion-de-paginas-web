@@ -1,0 +1,206 @@
+<body>
+    <div class="wrapper">
+        <div class="caja caja1">Scale</div>
+        <div class="caja caja2">Rotate</div>
+        <div class="caja caja3">Translate</div>
+        <div class="caja caja4">Skew</div>
+        <div class="caja caja5">SkewY</div>
+        <div class="caja caja6">SkewX</div>
+        <div class="caja caja7">TranslateY</div>
+        <div class="caja caja8">TranslateX</div>
+        <div class="caja caja9">RotateX</div>
+        <div class="caja caja10">RotateY</div>
+       
+
+        <div class="caja perspective1">perspective1</div>
+        <div class="caja perspective2">perspective2</div>
+    </div>
+    <div class="teoria">
+        transition-property: la propiedad o propieades a las que quiero que afecte
+        transition-duration: la duración de la transición
+        transition-timing-function: la función de tiempo que quiero que tenga la transición
+            - ease: empieza lento, acelera y termina lento
+            - linear: va a la misma velocidad
+            - ease-in: empieza lento y termina rápido
+            - ease-out: empieza rápido y termina lento
+            - ease-in-out: empieza lento, acelera y termina lento
+            - step-start: empieza de golpe
+            - step-end: termina de golpe
+        transition-delay: el tiempo que quiero que espere antes de que empiece la transición
+    </div>
+    <main>
+        <div class="transition11">este es cualquier elemento de mi pagina </div>
+    </main>
+    <main style="background-color: grey;">
+       <div class="transition12"></div>
+    </main>
+    <div class="caja caja13">nueva</div>
+</body>
+
+<style>
+    .wrapper {
+        position: relative;
+    }
+    .caja {
+        width: 100px ;
+        height: 100px;
+        color: black;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+       
+        text-align: center;
+        line-height: 100px;
+        float: left;
+        margin: 15px ;
+        font-size: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 5px;
+}
+
+    .caja1 {
+        background-color: red;
+        transform: scale(1);
+        transition: .3s;
+    }
+    .caja13 {
+       
+       /* inclinar a la izquierda */
+        transform: skew(30deg);
+        transition: .3s;
+    }
+    .caja1:hover {
+        transition: .3s;
+       
+        transform: scale(.7);
+    }
+    .caja2 {
+        background-color: blue;
+        transform: rotate(0deg);
+        transition: .3s;
+    }
+    .caja2:hover {
+        transition: .3s;
+       
+        transform: rotate(45deg);
+    }
+    .caja3 {
+        background-color: green;
+        transform: translate(0px, 0px);
+        transition: .3s;
+    }
+    .caja3:hover {
+        transition: .3s;
+     
+        transform: translate(20px, 20px);
+    }
+    .caja4 {
+        background-color: yellow;
+       
+        transform: skew(0deg);
+        transition: .3s;
+    }
+    .caja4:hover {
+        transition: .3s;
+        transform: skew(30deg);
+    }
+    .caja5 {
+        background-color: purple;
+        transition: .3s;
+    }
+    .caja5:hover {
+        transition: .3s;
+        transform: skewY(30deg);
+    }
+    .caja6 {
+        background-color: orange;
+        transition: .3s;
+    }
+    .caja6:hover {
+        transition: .3s;
+        transform: skewX(30deg);
+    }
+    .caja7 {
+        background-color: pink;
+        transition: .3s;
+    }
+    .caja7:hover {
+        transition: .3s;
+        transform: translateY(30px);
+    }
+    .caja8 {
+        background-color: brown;
+        transition: .3s;
+    }
+    .caja8:hover {
+        transition: .3s;
+        transform: translateX(30px);
+    }
+    .caja9 {
+        background-color: gray;
+        transition: .3s;
+    }
+    .caja9:hover {
+        transition: .3s;
+        transform: rotateX(180deg);
+    }
+    .caja10 {
+        background-color: lightblue;
+        transition: .3s;
+    }
+    .caja10:hover {
+        transition: .3s;
+        transform: rotateY(180deg);
+    }
+    .perspective1 {
+        background-color: lightgreen;
+        perspective: 200px;
+        position: relative;
+        transition: .3s;
+        transform: perspective(300px);
+    }
+    .perspective1:hover {
+        transition: .3s;
+        transform: perspective(200px);
+
+    }
+    .perspective2 {
+        position: relative;
+        background-color: lightcoral;
+        transform: perspective(150px);
+        transition: .3s;
+    }
+    main {
+        margin: 30px 0;
+        border: 1px solid black;
+        height: auto;
+        padding: 20px;
+    }
+    .transition11 {
+        width: 100%;
+     
+        transition: 1s;
+    }
+    .transition11:hover {
+        /* shadow */
+        box-shadow: 0 0 10px 10px rgba(0, 0, 0, .5);
+        color: grey;
+        text-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    }
+    .transition12 {
+        width: 100px;
+        background-color: green;
+        height: 100px;
+        transition: all 1s;
+        border: 1px solid black;
+    
+      
+    }
+
+
+    main:hover .transition12 {
+        width: 200px;
+        height: 100px;
+        background-color: red;
+        transform: translate(270%);
+        border: 1px solid black;
+    }
+</style>

@@ -1,0 +1,241 @@
+* {margin: 0;padding: 0;box-sizing: border-box;}
+
+.container {
+    border: 1px solid black;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgb(79, 138, 226) 0%, rgba(255, 255, 255, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper {
+    width: 35%;
+    background-color: white;
+    height:90%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+   
+}
+/* HEADER */
+header {
+    width: 100%;
+    background-color: rgba(55, 135, 255, 0.74);
+    height: 15%;
+    display: flex;
+    background-image: url("./assets/cabecera.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.logo {
+    width: 50%;
+    height: 100%;
+    color: white;
+    font-size: 30px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+}
+.logo > p {
+    margin-left: 9%;
+    border-bottom: 1px solid white;
+}
+.search-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav {
+    width:  100%;
+    height: 5%;
+    display: flex;
+    background-color: rgb(14, 14, 148);
+}
+nav > ul {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+nav > ul > li {
+    list-style: none;
+    font-size: 10px;
+    background-color: rgb(34, 34, 179);
+    border-right: 1px solid black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 200;
+    margin-left: 2px;
+}
+/* hoover en li */
+nav > ul > li:hover {
+    background-color: white;
+    cursor: pointer;
+}
+nav > ul > li > a:hover {
+    text-decoration: none;
+    color: rgb(165, 4, 4);  
+    list-style: none;  
+}
+nav > ul > li > a {
+    text-decoration: none;
+    color: white;    
+   
+}
+
+
+
+/* main */
+
+main {
+    width: 100%;
+    margin: 0 auto;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main > section {
+    border-radius: 5px;
+    width: 95%;
+    height: 95%;
+    display: flex;
+   
+
+}
+
+main > div {
+    width: 70%;
+    height: 100%;
+    
+}
+.container-news {
+    width: 70%;
+    height: 85%;
+    border-radius: inherit;
+}
+.title-div {
+    width: 100%;
+    height: 20%;
+  
+}
+
+.information-logos {
+    width: 100%;
+    height: 20%;
+    background-color: rgba(176, 205, 240, 0.959);
+}
+
+.text-information {
+    text-align: left;
+    width: 100%;
+    height: 60%;
+    font-size: 10px;
+    line-height: 14px;
+    padding: 10px;
+    background-color: rgba(176, 205, 240, 0.959);
+}
+
+
+.title-news {
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    padding: 0px 0px 0px 10px;
+    text-decoration: underline;
+    color: rgba(76, 87, 100, 0.959);;
+    background-color: rgba(155, 179, 206, 0.959);
+    display: flex;
+    align-items: center;
+  
+}
+.container-news > div {
+    width: 100%;
+    border-radius: inherit;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    height: 30%;
+    
+    border-radius: 10px 0px 0px 10px;
+ 
+}
+
+.none {
+    list-style: none;
+    width: 100%;
+    box-shadow: none !important;
+    height: 20.4% !important;
+    border: none !important;
+}
+.information-logos > ul {
+    display: flex;
+    height: 100%;
+}
+.icon-ul > li {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 23%;
+    font-size: 11px;
+    
+}
+footer {
+    font-size: 12px;
+    width: 100%;
+    height: 5%;
+    padding: 5px;
+    border-radius: 0px 0px 0px 10px; /* Border radius en la parte inferior izquierda */
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgb(255, 255, 255) 0px 0px 6px 1px inset;
+}
+aside {
+    width: 30%;
+    height: 100%;
+    background-color: rgba(169, 194, 223, 0.959);
+    border-radius: 0px 5px 5px 0px;
+}
+
+.sobre-mi {
+    width: 100%;
+    height: 18%;
+    border: 1px solid black;
+}
+.sobre-mi-title {
+    width: 100%;
+    height: 26%;
+    background-color: rgba(102, 143, 190, 0.959);
+    border: 1px solid black;
+}
+
+.sobre-mi-foto {
+    width: 50%;
+    height: 74%;
+    display: flex;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.categoria {
+    width: 100%;
+    height: 26%;
+    border: 1px solid black;
+}
+.archivo {
+    width: 100%;
+    height: 26%;
+    border: 1px solid black;
+}
+.enlace {
+    width: 100%;
+    height: 26%;
+   
+}

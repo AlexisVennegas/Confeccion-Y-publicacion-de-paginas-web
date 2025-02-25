@@ -1,0 +1,86 @@
+<body>
+    <h1>Animation-name</h1>
+    <p>
+        la propiedad animation-name especifica el nombre de la animación. 
+    </p>
+    <h1>Animation-direction</h1>
+    <p>indica si la animacion debe retroceder hasta el fotograma de inicio al finalizar la secuencia o si debe comenzar desde el principio al llegar al final 
+    valores = normal, reverse, alternate, alternate-reverse </p>
+    <h1>animation-duration</h1>
+    <p>especifica la duracion de la animacion en segundos o milisegundos</p>
+    <h1>animation-iteration-count</h1>
+    <p>especifica el numero de veces que la animacion debe repetirse</p>
+    <h1>animation-timing-function</h1>
+    <p>especifica la velocidad de la animacion</p>
+
+    <div></div>
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    h1 {
+        background-color: #f4f4f4;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    p {
+        background-color: #f9f9f9;
+        padding: 10px;
+    }
+    div {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        position: relative;
+        animation-name: example;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-out;
+        
+    }
+    @keyframes example2 {
+    from {
+        background-color: blue;
+        }
+    to  {
+        background-color: yellow;
+        }
+    }
+
+    @keyframes example {
+        0% {
+            background-color: blue;
+            left: 0px;
+            top: 0px;
+            width: 100px;
+        }
+        25% {
+            background-color: yellow;
+            left: 200px;
+            top: 0px;
+            width: 200px;
+        }
+        50% {
+            background-color: red;
+            left: 200px;
+            top: 200px;
+            width: 100px;
+        }
+        75% {
+            background-color: green;
+            left: 0px;
+            top: 200px;
+            width: 200px;
+        }
+        100% {
+            background-color: blue;
+            left: 0px;
+            top: 0px;
+            width: 100px;
+        }
+        
+    }
+</style>

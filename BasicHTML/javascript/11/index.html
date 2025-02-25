@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+
+        // piedra papel y tijera con objetos y orientada a  objetos
+
+        class Game {
+            constructor() {
+                this.options = ['piedra', 'papel', 'tijera'];
+                this.result = {
+                    piedra: 'tijera',
+                    papel: 'piedra',
+                    tijera: 'papel'
+                }
+            }
+
+            play(userOption) {
+                const randomOption = this.options[Math.floor(Math.random() * 3)];
+                console.log('Usuario:', userOption);
+                console.log('Computadora:', randomOption);
+                if (userOption === randomOption) {
+                    console.log('Empate');
+                    alert('Empate')
+                } else if (this.result[userOption] === randomOption) {
+                    console.log('Ganaste');
+                    alert('Ganaste')
+                } else {
+                    console.log('Perdiste');
+                    alert('Perdiste')
+                }
+            }
+        }
+
+
+        
+
+        const game = new Game();
+        const jugador = prompt('Elige piedra, papel o tijera').toLowerCase();
+        game.play(jugador);
+
+
+</script>
+</body>
+</html>

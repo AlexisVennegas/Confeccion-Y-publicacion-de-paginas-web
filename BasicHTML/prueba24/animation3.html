@@ -1,0 +1,83 @@
+<body>
+    <div class="wrapper">
+        <div class="circle">
+            <div class="mid"></div>
+        </div>
+    </div>
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .wrapper {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+     
+    }
+    .mid {
+        width: 90%;
+        height: 90%;  
+        background-color: white;
+        border-radius: 50%;
+        
+      
+    }
+    .circle {
+        width: 100px;
+        height: 100px;
+     
+        background: conic-gradient(
+        #ff0000, /* Rojo */
+        #008cff 100deg, /* Verde, 90 grados */
+        #15ff00 180deg, /* Azul, 180 grados */
+        #ffff00 270deg /* Amarillo, 270 grados */
+    );
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        position: relative;
+        left: 10%;
+        top: 0%;
+        margin-top: 100px;
+        animation: movimientoSexy 3s infinite;
+        animation-duration: 3s;
+        animation-fill-mode: both;  
+
+    }
+  
+
+    @keyframes movimientoSexy {
+    0% {
+        left: 10%;
+        top: 0%;
+        transform: rotate(0deg);
+    }
+    25% {
+        left: -30%;
+        top: 20%;
+        
+    }
+    50% {
+        left: 20%;
+        top: 40%;
+        transform: rotate(180deg);
+    }
+    75% {
+        left: -30%;
+        top: 20%;
+    }
+    100% {
+        left: 10%;
+        top: 0%;
+        transform: rotate(0deg);
+
+    }
+}
+
+</style>

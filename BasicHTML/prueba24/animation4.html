@@ -1,0 +1,45 @@
+<body>
+    <div class="bg">
+        <img src="./todo/images_animation/coche.png" alt="" class="car">
+    </div>
+
+
+</body>
+<style>
+
+  body {
+    padding: 0;
+    margin: 0;
+    overflow-y: hidden;
+}
+
+
+.bg {
+    position: relative;
+    background: url(./todo/images_animation/fondo.jpg);
+    height: 500px;
+    width: 600px;
+    background-size: cover;
+    background-position: 0;
+    background-repeat: repeat-x;
+    animation: animate .4s linear infinite;
+    margin: 0 auto;
+
+}
+.car {
+    position: absolute;
+    bottom: 15%;
+    left: 30%;
+}
+
+
+@keyframes animate {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 92% 0;
+    }
+}
+
+</style>
