@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    <url>
+        <loc>http://localhost/esigned-1.0.0/index.html</loc>
+          <!-- video first -->
+            <video:loc>images/video.mp4</video:loc>
+                <video:title>tatuaje studio</video:title>
+                <video:description>tatuaje studio</video:description>
+                <video:thumbnail_loc>images/video.mp4</video:thumbnail_loc>
+                <video:content_loc>images/video.mp4</video:content_loc>
+            </video:video>
+            <!-- image first -->
+            <image:image>
+                <image:loc>https://www.lamanozurda.es/wp-content/uploads/2022/05/la.mano_.zurda_.tatuajes-madrid-ilustracion-color-andrea-magie-1-400x400.jpg</image:loc>
+                <image:caption>estilo linea tatuaje</image:caption>
+            </image:image>
+            <!-- second image -->
+            <image:image>
+                <image:loc>https://www.lamanozurda.es/wp-content/uploads/2022/05/la.mano_.zurda_.tatuajes-madrid-ilustracion-color-andrea-magie-1-400x400.jpg</image:loc>
+                <image:caption>estilo color tatuaje</image:caption>
+            </image:image>
+            <!-- third image -->
+            <image:image>
+                <image:loc>https://www.lamanozurda.es/wp-content/uploads/2022/05/la.mano_.zurda_.tatuajes-madrid-ilustracion-color-andrea-magie-1-400x400.jpg</image:loc>
+                <image:caption>estilo backwork tatuaje</image:caption>
+            </image:image>
+            <!-- fourth image -->
+            <image:image>
+                <image:loc>https://www.lamanozurda.es/wp-content/uploads/2022/05/la.mano_.zurda_.tatuajes-madrid-ilustracion-color-andrea-magie-1-400x400.jpg</image:loc>
+                <image:caption>estilo realista tatuaje</image:caption>  
+            </image:image>
+            <!-- fifth image -->
+            <image:image>
+                <image:loc>https://www.lamanozurda.es/wp-content/uploads/2022/05/la.mano_.zurda_.tatuajes-madrid-ilustracion-color-andrea-magie-5-400x400.jpg
+                https://www.lamanozurda.es/wp-content/uploads/2022/05/la.mano_.zurda_.tatuajes-madrid-ilustracion-color-andrea-magie-5-400x400.jpg</image:loc>
+                <image:caption>estilo geometric tatuaje</image:caption>
+            </image:image>
+            <!-- sixth image -->
+            <image:image>
+                <image:loc>https://artcampus.es/wp-content/uploads/2019/08/tatuaje-avanzado.jpg</image:loc>
+                <image:caption>¿Quienes somos?</image:caption>
+            </image:image>
+            <!-- seventh image -->
+            <image:image>
+                <image:loc>https://www.lamanozurda.es/wp-content/uploads/2022/05/la.mano_.zurda_.tatuajes-madrid-ilustracion-color-andrea-magie-1-400x400.jpg</image:loc>
+                <image:caption>diseños creativos</image:caption>
+            </image:image>
+            <!-- eighth image -->
+            <image:image>
+                <image:loc>https://www.lamanozurda.es/wp-content/uploads/2022/05/la.mano_.zurda_.tatuajes-madrid-ilustracion-color-andrea-magie-1-400x400.jpg</image:loc>
+                <image:caption>diseños creativos</image:caption>
+            </image:image>
+            <!-- ninth image -->
+            <image:image>
+                <image:loc>https://www.lamanozurda.es/wp-content/uploads/2022/05/la.mano_.zurda_.tatuajes-madrid-ilustracion-color-andrea-magie-1-400x400.jpg</image:loc>
+                <image:caption>diseños creativos</image:caption>
+            </image:image>
+            <!-- tenth image -->
+            <image:image>
+                <image:loc>https://www.lamanozurda.es/wp-content/uploads/2022/05/la.mano_.zurda_.tatuajes-madrid-ilustracion-color-andrea-magie-5-400x400.jpg</image:loc>
+                <image:caption>diseños creativos</image:caption>
+            </image:image>
+            <!-- eleventh image -->
+            <image:image>
+                <image:loc>images/c-1.png</image:loc>
+                <image:caption>Primera opinion</image:caption>
+            </image:image>
+            <!-- twelfth image -->
+            <image:image>
+                <image:loc>images/quote.png</image:loc>
+                <image:caption>Segunda opinion</image:caption>
+            </image:image>
+            <!-- thirteenth image -->
+            <image:image>
+                <image:loc>images/c-2.png</image:loc>
+                <image:caption>Tercera opinion</image:caption>
+            </image:image>
+            <!-- fourteenth image -->
+            <image:image>
+                <image:loc>images/c-3.png</image:loc>
+                <image:caption>Cuarta opinion</image:caption>
+            </image:image>
+            <!-- fifteenth image -->
+            <image:image> n 
+                <image:loc>images/instagram.png</image:loc>
+                <image:caption>instagram logo</image:caption>
+            </image:image>
+            <!-- sixteenth image -->
+            <image:image>
+                <image:loc>images/facebook.png</image:loc>
+                <image:caption>facebook logo</image:caption>
+            </image:image>
+            <!-- seventeenth image -->
+            <image:image>
+                <image:loc>images/twitter.png</image:loc>
+                <image:caption>twitter logo</image:caption>
+            </image:image>
+            <!-- eighteenth image -->
+            <image:image>
+                <image:loc>images/whatsapp.png</image:loc>
+                <image:caption>whatsapp logo</image:caption>
+            </image:image>
+            <!-- nineteenth image -->
+            <image:image>
+                <image:loc>images/youtube.png</image:loc>
+                <image:caption>Youtube</image:caption>
+            </image:image>
+
+
+
+    </url>
+    <url>
+        <loc>http://localhost/esigned-1.0.0/about.html</loc>
+        <lastmod>2021-01-01</lastmod>
+        <map>
+            <loc>http://localhost/esigned-1.0.0/about.html</loc>
+            <lastmod>2021-01-01</lastmod>
+        </map>
+        <video:video>
+            <video:thumbnail_loc>images/video2.mp4</video:thumbnail_loc>
+            <video:title>about</video:title>
+            <video:description>estudio de tatuajes acerca de nosotros</video:description>
+            <video:content_loc>images/video2.mp4</video:content_loc>
+        </video:video>
+    </url>
+    <url>
+        <loc>http://localhost/esigned-1.0.0/do.html</loc>
+        <!-- first image -->
+        <image:image>
+            <image:loc>https://images.unsplash.com/photo-1483985988355-763728e1935b?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTg2Ng&ixlib=rb-1.2.1&q=85</image:loc>
+            <image:caption>Primera imagen carrousel tatuaje figuras</image:caption>
+        </image:image>
+        <!-- second image -->
+        <image:image>
+            <image:loc>https://images.unsplash.com/photo-1500643752441-4dc90cda350a?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTg2Ng&ixlib=rb-1.2.1&q=85</image:loc>
+            <image:caption>Segunda imagen carrousel tatuaje figuras</image:caption>
+        </image:image>
+        <!-- third image -->
+        <image:image>
+            <image:loc>https://images.unsplash.com/photo-1465408953385-7c4627c29435?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTg2Ng&ixlib=rb-1.2.1&q=85</image:loc>
+            <image:caption>Tercera imagen carrousel tatuaje figuras</image:caption>
+        </image:image>
+        <!-- fourth image -->
+        <image:image>
+            <image:loc>https://images.unsplash.com/photo-1483985988355-763728e1935b?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTg2Ng&ixlib=rb-1.2.1&q=85</image:loc>
+            <image:caption>Cuarta imagen carrousel tatuaje figuras</image:caption>
+        </image:image>
+        <!-- fifth image -->
+        <image:image>
+            <image:loc>https://images.unsplash.com/photo-1483985988355-763728e1935b?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTg2Ng&ixlib=rb-1.2.1&q=85</image:loc>
+            <image:caption>Quinta imagen carrousel tatuaje figuras</image:caption>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://localhost/esigned-1.0.0/network.html</loc>
+        <!-- first image -->
+        <image:image>
+            <image:loc>./images/instagram.png</image:loc>
+            <image:caption>contactanos - instagram</image:caption>
+        </image:image>
+        <!-- second image -->
+        <image:image>
+            <image:loc>./images/facebook.png</image:loc>
+            <image:caption>contactanos - facebook</image:caption>
+        </image:image>
+        <!-- third image -->
+        <image:image>
+            <image:loc>./images/twitter.png</image:loc>
+            <image:caption>contactanos - twitter</image:caption>
+        </image:image>
+        <!-- fourth image -->
+        <image:image>
+            <image:loc>./images/whatsapp.png</image:loc>
+            <image:caption>contactanos - whatsapp</image:caption>
+        </image:image>
+    </url>
+    <url>
+        <!-- formulaario -->
+        <loc>http://localhost/esigned-1.0.0/contact.php</loc>
+        <lastmod>2021-01-01</lastmod>
+    </url>
+</urlset>
