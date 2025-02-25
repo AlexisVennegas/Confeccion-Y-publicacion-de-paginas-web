@@ -1,0 +1,70 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+
+
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+	    <div class="wrapper">
+			<header>
+				<div class="img-container">
+					<!-- <img class="logo-header" src="../Img/amunet.png" alt="Amunet"> -->
+				</div>
+				<nav class="menu">
+					<ul class="ul-menu-header">
+						<li><a href="./Tatuajes">Tatuaje</a></li>
+						<li><a href="./About">About</a></li>
+						<li><a href="./Services">Services</a></li>
+						<li><a href="./Contact">Contact</a></li>
+						<li><a href="./">morefuture</a></li>                    
+					</ul>
+					<img src="img/menu.png" class="menu-img" alt="menu-logo">
+					<div class="desplegable" id="desplegableid">
+						<ul class="ul-menu-header">
+							<li><a href="./">Home</a></li>
+							<li><a href="./Tatuajes">Tatuaje</a></li>
+							<li><a href="./About">About</a></li>
+							<li><a href="./Services">Services</a></li>
+							<li><a href="./Contact">Contact</a></li>
+							<li><a href="./">morefuture</a></li>                    
+						</ul>
+						<ul class="ul-menu-header-mobile">
+							
+							<li><a href="./Tatuajes">Tatuaje</a></li>
+							<li><a href="./About">About</a></li>
+							<li><a href="./Services">Services</a></li>
+							<li><a href="./Contact">Contact</a></li>
+							<li><a href="./">morefuture</a></li>    
+						</ul>
+					</div>
+				</nav>
+			</header>
+			<main class="video-container">
+				<img class="logo-main" src="img/amunet.png" alt="Amunet">
+				<video class="video-background" src="./img/video.mp4" autoplay muted></video>
+			</main>
+		</div>
+	</main>
+</Layout>
+<style>
+	
+
+
+</style>
+<script>
+    const buttonMenu = document.querySelector('.menu-img');
+
+    buttonMenu.addEventListener('click', () => {
+        const menu = document.querySelector('.desplegable');
+        menu.classList.toggle('activate');
+        buttonMenu.src = menu.classList.contains('activate') ? './img/cancelar.png' : './img/menu.png';
+        // si esta activo y el tamaño de la pantalla es mayor a 768px desactivar el despelgable
+        if (menu.classList.contains('activate') && window.innerWidth > 768) {
+            menu.classList.remove('activate');
+            buttonMenu.src = './img/menu.png';
+        }
+    }
+    )
+</script>

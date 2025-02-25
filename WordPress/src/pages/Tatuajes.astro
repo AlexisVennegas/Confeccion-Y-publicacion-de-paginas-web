@@ -1,0 +1,100 @@
+---
+import Layout from "../layouts/Layout.astro";
+//enviar una props a un componente
+import { tatuajes } from "../data/tatuajes";
+import List from "../components/List.astro";
+// tomamos los primeros 4 elementos de mi array de tatuajes
+const tatuajesSelect1 = tatuajes.slice(0, 5);
+const tatuajesSelect2 = tatuajes.slice(5, 10);
+const tatuajesSelect3 = tatuajes.slice(10, 15);
+---
+
+<Layout title="Home">
+  <div class="wrapper">
+    <header class="header-Tatuajes">
+      <div class="img-container">
+        <a class="a-logo-header" href="./">
+          <img
+            class="logo-header finally-header-00"
+            src="img/amunet.png"
+            alt="Amunet"
+          />
+        </a>
+      </div>
+      <nav class="menu">
+        <ul class="ul-menu-header">
+          <li><a href="./Tatuajes">Tatuaje</a></li>
+          <li><a href="./About">About</a></li>
+          <li><a href="./Services">Services</a></li>
+          <li><a href="./Contact">Contact</a></li>
+          <li><a href="./">morefuture</a></li>                    
+        </ul>
+        <img  src="img/menu.png" class="menu-img" alt="menu-logo">
+        <div class="desplegable" id="desplegableid">
+          <ul class="ul-menu-header">
+            <li><a href="./Tatuajes">Tatuaje</a></li>
+            <li><a href="./About">About</a></li>
+            <li><a href="./Services">Services</a></li>
+            <li><a href="./Contact">Contact</a></li>
+            <li><a href="./">morefuture</a></li>                    
+          </ul>
+          <ul class="ul-menu-header-mobile">
+            <li><a href="./">Home</a></li>
+            <li><a href="./Tatuajes">Tatuaje</a></li>
+            <li><a href="./About">About</a></li>
+            <li><a href="./Services">Services</a></li>
+            <li><a href="./Contact">Contact</a></li>
+            <li><a href="./">morefuture</a></li>    
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="content-tatuajes">
+      <div class="slide-one">
+        <h1 class="nueva">Lineal</h1>
+        <ul class="imagenes-ul">
+          <List tatuajes={tatuajesSelect1} />
+        </ul>
+      </div>
+      <div class="slide-one">
+        <h1 class="nueva">Color</h1>
+        <ul class="imagenes-ul">
+          <List tatuajes={tatuajesSelect2} />
+        </ul>
+      </div>
+    </main>
+  </div>
+</Layout>
+<style>
+  main {
+    width: 100%;
+    height: 100vh;
+  }
+  .nueva {
+    margin: 50px 0;
+  }
+
+  .imagenes-ul {
+    display: flex;
+  }
+
+  .img_tatuajes-slider {
+    width: 90%;
+    height: 90%;
+  }
+</style>
+<script>
+  const buttonMenu = document.querySelector('.menu-img');
+
+  buttonMenu.addEventListener('click', () => {
+      const menu = document.querySelector('.desplegable');
+      menu.classList.toggle('activate');
+      buttonMenu.src = menu.classList.contains('activate') ? 'img/cancelar.png' : 'img/menu.png';
+      // si esta activo y el tamaño de la pantalla es mayor a 768px desactivar el despelgable
+      if (menu.classList.contains('activate') && window.innerWidth > 768) {
+          menu.classList.remove('activate');
+          buttonMenu.src = 'img/menu.png';
+      }
+  }
+  )
+</script>

@@ -1,0 +1,45 @@
+---
+// sacamos de las props el array de tatuajes
+
+export interface Props {
+  tatuajes: [];
+}
+
+const { tatuajes } = Astro.props;
+---
+
+{
+  tatuajes.map(({ title, id, img }) => {
+    return (
+     
+       
+          <li class="imagenes-li ">
+            <a href={title} class="enlace-imagen">
+              <img
+                class={`img_tatuajes-slider first-page-${id}`}
+                src={img}
+                alt="tatuaje de una rosa"
+              />
+             <h5 class={`title-${id}`}>{title}</h5>
+            </a>
+          </li>
+      
+   
+    );
+  })
+}
+<style>
+     .imagenes-li {
+        width: 20%;
+        height: 100%;
+    }
+    .img_tatuajes-slider {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    h5 {
+        text-align: center;
+    }
+</style>

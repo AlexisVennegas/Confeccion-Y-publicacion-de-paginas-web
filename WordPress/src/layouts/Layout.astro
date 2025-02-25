@@ -1,0 +1,460 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+import { ViewTransitions } from 'astro:transitions';
+
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+      
+		<slot />
+        <ViewTransitions />
+
+	</body>
+</html>
+<style is:global>
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+	
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.jim-nightshade-regular {
+    font-family: "Jim Nightshade", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+/* WRAPPER */
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+}
+
+/* HEADER */
+header {
+    position: relative;
+    z-index: 33;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: rgba(255, 255, 255, 0.336);
+}
+
+.img-container {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-header {
+    height: 60px;
+    view-transition-name: image-icon;
+}
+.menu {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.ul-menu-header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+li {
+    list-style: none;
+    margin-top: 10px;
+}
+li > a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Jim Nightshade', cursive;
+    transition: .3s;
+    margin-top: 12px;
+}
+li > a:hover {
+    color: red;
+    transition: .3s;
+}
+
+/* video */
+.video-container {
+    width: 100%;
+    height: 90%;
+    z-index: -1;
+}
+.video-background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;    
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.3);
+}
+.logo-main {
+    position: absolute;
+    z-index: 1;
+    transform: translate(-50%, -45%);
+    left: 50%;
+    top: 50%;
+    width: 40%;
+    min-width: 700px;
+    view-transition-name: image-icon;
+}
+
+.first-page-tatuaje-1 {
+    view-transition-name: first-tatuaje;
+}
+.first-page-tatuaje-2 {
+    view-transition-name: second-tatuaje;
+}
+.first-page-tatuaje-3 {
+    view-transition-name: third-tatuaje;
+}
+.first-page-tatuaje-4 {
+    view-transition-name: fourth-tatuaje;
+}
+.first-page-tatuaje-5 {
+    view-transition-name: fifth-tatuaje;
+}
+.first-page-tatuaje-6 {
+    view-transition-name: sixth-tatuaje;
+}
+.first-page-tatuaje-7 {
+    view-transition-name: seventh-tatuaje;
+}
+.first-page-tatuaje-8 {
+    view-transition-name: eighth-tatuaje;
+}
+.first-page-tatuaje-9 {
+    view-transition-name: ninth-tatuaje;
+}
+.first-page-tatuaje-10 {
+    view-transition-name: tenth-tatuaje;
+}
+.secondpage-tatuaje-1 {
+    view-transition-name: first-tatuaje;
+}
+.secondpage-tatuaje-2 {
+    view-transition-name: second-tatuaje;
+}
+.secondpage-tatuaje-3 {
+    view-transition-name: third-tatuaje;
+}
+.secondpage-tatuaje-4 {
+    view-transition-name: fourth-tatuaje;
+}
+.secondpage-tatuaje-5 {
+    view-transition-name: fifth-tatuaje;
+}
+.secondpage-tatuaje-6 {
+    view-transition-name: sixth-tatuaje;
+}
+.secondpage-tatuaje-7 {
+    view-transition-name: seventh-tatuaje;
+}
+.secondpage-tatuaje-8 {
+    view-transition-name: eighth-tatuaje;
+}
+.secondpage-tatuaje-9 {
+    view-transition-name: ninth-tatuaje;
+}
+.secondpage-tatuaje-10 {
+    view-transition-name: tenth-tatuaje;
+}
+
+
+@media (width < 800px) {
+    .logo-main {
+        width: 70%;
+        min-width: auto;
+    }
+}
+
+::view-transition-old(root), ::view-transition-new(root) {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+
+@font-face {
+    font-family: "Jim Nightshade";
+    src: url("../Fonts/Jim_Nightshade/JimNightshade-Regular.ttf") format("truetype");
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    background-color: #000;
+}
+.wrapper {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+   
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.content-info {
+    border: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    width: 82%;
+    height: 50%;
+    display: flex;
+}
+.image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image > img {
+    width: 80%;
+    height: 50%;
+    object-fit: cover;
+    background: white;
+}
+.info {
+    width: 50%;
+    height: 100%;
+}
+h1 {
+    text-decoration: none;
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'Jim Nightshade', cursive;
+    transition: .3s;
+    text-align: center;
+
+}
+p {
+    color: white;
+    margin: 10px 0;
+    padding: 20px;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: rgba(255, 255, 255, 0.336);
+}
+
+.img-container {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-header {
+    height: 60px;
+}
+.menu {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.ul-menu-header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+li {
+    list-style: none;
+    margin-top: 10px;
+}
+li > a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Jim Nightshade', cursive;
+    transition: .3s;
+    margin-top: 12px;
+    
+}
+li > a:hover {
+    color: red;
+    transition: .3s;
+}
+.finally-div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.finally-div > img {
+    width: 30%;
+}
+.after-title-tatuaje-1 {
+    view-transition-name: title-1;
+}
+.after-title-tatuaje-2 {
+    view-transition-name: title-2;
+}
+.after-title-tatuaje-3 {
+    view-transition-name: title-3;
+}
+.after-title-tatuaje-4 {
+    view-transition-name: title-4;
+}
+.after-title-tatuaje-5 {
+    view-transition-name: title-5;
+}
+.after-title-tatuaje-6 {
+    view-transition-name: title-6;
+}
+.title-tatuaje-1 {
+    view-transition-name: title-1;
+}
+.title-tatuaje-2 {
+    view-transition-name: title-2;
+}
+.title-tatuaje-3 {
+    view-transition-name: title-3;
+}
+.title-tatuaje-4 {
+    view-transition-name: title-4;
+}
+.title-tatuaje-5 {
+    view-transition-name: title-5;
+}
+.title-tatuaje-6 {
+    view-transition-name: title-6;
+}
+.menu-img {
+    display: none;
+}
+.desplegable {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    visibility: hidden;
+    z-index: 4;
+    background: #ff000066;
+    bottom: 0;
+    left: -100%;
+    transition: .2s;
+}
+.activate {
+    display: block;
+    left: 0;
+    visibility: visible;
+    transition: .3s;
+}
+.ul-menu-header-mobile {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.ul-menu-header-mobile > li {
+    margin-top: 10px;
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+  
+    justify-content: center;
+}
+ 
+@media (width < 800px) {
+    .ul-menu-header {
+        display: none;
+    }
+    .img-container {
+    display: none;
+    }
+    .menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    }
+    .menu-img {
+    display: block;
+    width: 10%;
+    margin: 10px 30px 10px 0;
+    cursor: pointer;
+    position: relative;
+    z-index: 44;
+    }
+    .imagenes-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .imagenes-li  {
+    width: 100% !important;
+    height: 100%;
+    }
+    .content-info {
+    border: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    }
+    .info {
+    width: 100%;
+    height: 100%;
+}
+    
+}
+.desactive {
+    display: none ;
+}  
+
+</style>
