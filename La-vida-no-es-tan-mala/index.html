@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text Animation</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./amor-propio.png" type="image/x-icon">
+</head>
+<body>
+    <section>
+        <h1 class="h1_motivacional">la vida no me parece tan mala.</h1>
+    </section>
+    <audio autoplay>
+      <source src="./rhcp.mp3" type="audio/mpeg">
+    </audio>
+
+  <script>
+    const text = document.querySelector('.h1_motivacional');
+    const texto_fijo = 'la vida no me parece tan mala.';
+    const textos = [
+        'Cuando voy a practicar natación después de una tarde complicada ... la vida no es tan mala ',
+        'Cuando paso tiempo jugando con amigos hasta la madrugada ... la vida no es tan mala',
+        'Cuando el proyecto de programación que estoy haciendo funciona ... la vida no es tan mala',
+        'Cuando puedo hablar con ella ... la vida no es tan mala',
+        'Cuando puedo pasar tiempo con ella ... la vida no es tan mala',
+        'Cuando veo todo lo que he logrado/aprendido ... la vida no es tan mala',
+        'Cuando disfruto de mi soledad ... la vida no es tan mala', 
+
+        ''
+    ];
+
+    let currentIndex = 0;
+    let currentText = texto_fijo;
+    let isDeleting = false;
+    const typingSpeed = 50;
+    const pauseDuration = 3000;
+
+    function animateText() {
+      const currentPhrase = textos[currentIndex];
+    
+      if (!isDeleting && currentText !== currentPhrase) {
+        currentText = currentPhrase.substring(0, currentText.length + 1);
+        text.textContent = currentText;
+      } else if (isDeleting && currentText !== texto_fijo) {
+        currentText = currentText.substring(0, currentText.length - 1);
+        text.textContent = currentText
+        ;
+      }
+
+      if (currentText === currentPhrase) {
+        isDeleting = true;
+        setTimeout(() => {
+          isDeleting = false;
+          currentIndex = (currentIndex + 1) % textos.length;
+        }, pauseDuration);
+      }
+
+      setTimeout(animateText, isDeleting ? typingSpeed / 2 : typingSpeed);
+    }
+
+    // Iniciar la animación
+    animateText();
+  </script>
+</body>
+</html>
