@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.wrapper {
+    width: 100%;
+    background-color: #3178be;
+    padding: 25px 0;
+    overflow: hidden;
+}
+
+.movile{
+    margin: 0px auto;
+    width: 400px;
+    height: 900px;
+    background-color: #333;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+.container_box{
+    width: 95%;
+    height: 90%;
+    background-color: #fff;
+    padding: 40px 15px 15px;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    gap: 10px 40px;
+}
+.data{
+    height: 50px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    background-color: rgb(75, 190, 239);
+    text-align: center;
+    line-height: 50px;
+    padding: 0px 20px;
+    animation: popupdata .3s ease;
+    cursor: pointer;
+}
+.data.data:nth-child(2n){
+    background-color:rgba(90, 243, 146, 0.803);
+}
+.buttons {
+    width: 85%;
+    position: absolute;
+    height: 30px;
+    inset: 55px 30px auto auto; 
+    display: flex;
+    justify-content: space-between;
+}
+.buttons a{
+    display: block;
+    width: 30px;
+    height: 100%;
+    /* margin-top: 40px; */
+}
+.buttons span{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    /* background-color: #f50000; */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform .3s;
+}
+.buttons a:first-child span{
+    background: url('../icons/right-arrow_545682.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+}
+.buttons a:last-child span{
+    background: url('../icons/reload_3936604.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.buttons a span:hover{
+    transform: scale(1.2) rotate(180deg);
+}
+
+@keyframes popupdata {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
